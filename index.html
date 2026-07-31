@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secure PDF Share</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Firebase -->
+    <script type="module" src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js"></script>
+    <script type="module" src="https://www.gstatic.com/firebasejs/10.12.2/firebase-storage.js"></script>
+    <script type="module" src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js"></script>
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>🔐 Secure PDF Share</h1>
+    <p>Upload encrypted PDF files protected with a password.</p>
+
+    <!-- Upload Card -->
+
+    <div class="card">
+
+        <h2>Upload PDF</h2>
+
+        <input
+            type="file"
+            id="pdfFile"
+            accept=".pdf"
+        >
+
+        <input
+            type="password"
+            id="uploadPassword"
+            placeholder="Enter Password"
+        >
+
+        <button id="uploadBtn">
+            Encrypt & Upload
+        </button>
+
+        <div id="uploadStatus"></div>
+
+        <div class="share-box">
+
+            <h3>Share ID</h3>
+
+            <input
+                type="text"
+                id="shareId"
+                readonly
+            >
+
+            <button id="copyBtn">
+                Copy
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- Download Card -->
+
+    <div class="card">
+
+        <h2>Download PDF</h2>
+
+        <input
+            type="text"
+            id="downloadId"
+            placeholder="Enter Share ID"
+        >
+
+        <input
+            type="password"
+            id="downloadPassword"
+            placeholder="Enter Password"
+        >
+
+        <button id="downloadBtn">
+            Download & Decrypt
+        </button>
+
+        <div id="downloadStatus"></div>
+
+    </div>
+
+</div>
+
+<script type="module" src="script.js"></script>
+
+</body>
+</html>
