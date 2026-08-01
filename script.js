@@ -6,7 +6,7 @@ import { createClient } from
 // SUPABASE CONFIG
 // =============================
 
-const SUPABASE_URL = "https://huqkayiunltctqdktxfv.supabase.coL";
+const SUPABASE_URL = "https://huqkayiunltctqdktxfv.supabase.co";
 
 const SUPABASE_ANON_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imh1cWtheWl1bmx0Y3RxZGt0eGZ2Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODU1MTA1NTAsImV4cCI6MjEwMTA4NjU1MH0.zw8FVm8pMxGypXmgzFJ2-nfPoRXe899r62kXVMuNiXU";
 
